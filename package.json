@@ -1,0 +1,21 @@
+{
+  "name": "videoinfo",
+  "version": "1.0.0",
+  "description": "meu hello words de electron",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc -w",
+    "prestart": "copyfiles */*.html dist/",
+    "start": "electron ./dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^5.0.2",
+    "fluent-ffmpeg": "^2.1.2"
+  },
+  "devDependencies": {
+    "@types/fluent-ffmpeg": "^2.1.9",
+    "copyfiles": "^2.1.0"
+  }
+}
